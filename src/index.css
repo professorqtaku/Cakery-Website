@@ -2,7 +2,7 @@
 
 @theme {
   --color-primary: #2A5C5C;
-  --color-secondary: #5D4037;
+  --color-secondary: #77574D;
   --color-tertiary: #F8BBD0;
   --color-neutral: #FFF9F1;
   --font-family-headline: 'Epilogue', serif;
@@ -12,17 +12,27 @@
 
 :root {
   --primary: #2A5C5C;
-  --secondary: #5D4037;
+  --secondary: #77574D;
   --tertiary: #F8BBD0;
   --neutral: #FFF9F1;
-
+  --surface: #fef8f0;
+  --surface-container-low: #f9f3eb;
+  --surface-container-lowest: #ffffff;
+  --surface-container-high: #ede7e0;
+  --surface-variant: #e7e2da;
+  --outline: #707978;
+  --primary-container: #2a5c5c;
+  --secondary-container: #fed3c7;
+  --tertiary-container: #754658;
+  --on-surface: #1d1b17;
+  --on-surface-variant: #404848;
+  --on-primary: #ffffff;
+  --on-tertiary: #ffffff;
+  --on-secondary-container: #795950;
+  --on-secondary-fixed-variant: #5d4037;
+  --text: #1d1b17;
+  --text-muted: #5e5a53;
 }
-
-body {
-  background-color: var(--neutral);
-}
-
-@media (prefers-color-scheme: dark) {}
 
 body {
   margin: 0;
@@ -30,4 +40,12 @@ body {
   color: var(--text);
   background-color: var(--neutral);
   min-height: 100vh;
+}
+
+.font-headline {
+  font-family: var(--font-family-headline);
+}
+
+.patisserie-shadow {
+  box-shadow: 0 10px 30px -10px rgba(29, 27, 23, 0.1);
 }

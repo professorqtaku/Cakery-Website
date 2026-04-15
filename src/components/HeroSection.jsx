@@ -17,21 +17,24 @@ function HeroSection() {
                     <div className="flex flex-wrap gap-6">
                         <Link
                             to="/products"
-                            className="bg-primary text-white px-10 py-5 rounded-lg font-bold text-lg hover:opacity-90 transition-all shadow-lg flex items-center gap-3"
+                            className="bg-primary text-white px-10 py-5 rounded-lg font-bold text-lg hover:opacity-90 transition-all patisserie-shadow flex items-center gap-3"
                         >
                             Explore Collections
                             <span className="material-icons text-xl">arrow_forward</span>
                         </Link>
-                        <button className="bg-tertiary text-secondary px-10 py-5 rounded-lg font-bold text-lg hover:opacity-90 transition-all">
+                        <Link
+                            to="/about"
+                            className="bg-tertiary text-secondary px-10 py-5 rounded-lg font-bold text-lg hover:opacity-90 transition-all patisserie-shadow flex items-center gap-3"
+                        >
                             Our Story
-                        </button>
+                        </Link>
                     </div>
                 </div>
 
                 {/* Right Images */}
                 <div className="md:col-span-5 relative">
                     {/* Main Image */}
-                    <div className="aspect-[4/5] bg-neutral/10 rounded-2xl overflow-hidden shadow-lg transform rotate-2 translate-x-4">
+                    <div className="aspect-[4/5] bg-neutral/10 rounded-2xl overflow-hidden patisserie-shadow transform rotate-2 translate-x-4">
                         <img
                             alt="Signature Cake"
                             className="w-full h-full object-cover"
@@ -40,7 +43,7 @@ function HeroSection() {
                     </div>
 
                     {/* Secondary Image */}
-                    <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-tertiary rounded-2xl overflow-hidden shadow-lg -rotate-6 hidden md:block">
+                    <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-tertiary rounded-2xl overflow-hidden patisserie-shadow -rotate-6 hidden md:block">
                         <img
                             alt="Cupcakes"
                             className="w-full h-full object-cover"

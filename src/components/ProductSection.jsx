@@ -30,7 +30,7 @@ const ProductSection = ({ title, subtitle, products, isWeddingCakes = false }) =
                                 <img
                                     src={cake.image}
                                     alt={cake.name}
-                                    className="w-full aspect-square object-cover rounded-2xl mb-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+                                    className="w-full aspect-square object-cover rounded-2xl mb-6 patisserie-shadow hover:shadow-lg transition-shadow duration-300"
                                 />
                                 <h4 className="font-headline text-xl font-bold text-on-background">{cake.name}</h4>
                                 <p className="text-primary font-bold mt-2">${cake.price}</p>
