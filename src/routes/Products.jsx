@@ -6,7 +6,7 @@ function Products() {
     const weddingCakes = products.filter(product => product.type === "wedding-cake");
 
     return (
-        <main className="pt-20 pb-20 px-6 max-w-7xl mx-auto">
+        <div className="pt-20 pb-20 px-6 max-w-7xl mx-auto">
             {/* Hero Section */}
             <section className="mb-20">
                 <div className="overflow-hidden rounded-3xl bg-neutral/20 min-h-[400px] flex flex-col md:flex-row items-center p-8">
@@ -40,7 +40,7 @@ function Products() {
                 products={weddingCakes}
                 isWeddingCakes={true}
             />
-        </main>
+        </div>
     );
 }
 
