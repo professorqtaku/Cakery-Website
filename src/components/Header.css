@@ -1,0 +1,65 @@
+.glass-header {
+    background-color: rgba(255, 249, 241, 0.85);
+    backdrop-filter: blur(20px);
+}
+
+.nav-link {
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--primary);
+    color: var(--primary);
+}
+
+.nav-link.active {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+.mobile-nav-link {
+    color: var(--secondary);
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    color: var(--primary);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 500px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 500px;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+        max-height: 0;
+    }
+}
+
+nav.mobile-menu-open {
+    animation: slideDown 0.3s ease forwards;
+    overflow: hidden;
+}
