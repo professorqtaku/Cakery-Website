@@ -33,9 +33,6 @@ function Header() {
 
                 {/* Right Side - Shopping Cart + Hamburger Menu */}
                 <div className="flex items-center gap-4 ml-auto md:ml-0">
-                    <button className="hidden md:flex items-center justify-center rounded-full border border-[var(--primary)] bg-[var(--neutral)] p-2 text-[var(--primary)] shadow-sm transition hover:bg-[var(--primary)]/10">
-                        <span className="material-icons text-xl">shopping_bag</span>
-                    </button>
 
                     {/* Mobile Hamburger Menu Button */}
                     <button

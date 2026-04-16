@@ -4,7 +4,8 @@ function Footer({ className = "" }) {
             <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between md:px-12">
                 <div className="space-y-2 text-center md:text-left">
                     <p className="text-xl font-semibold text-[var(--primary)]">Munamii Cakery</p>
-                    <p className="text-sm text-[var(--on-surface-variant)]">© 2024 Munamii Cakery. The Digital Pâtissier.</p>
+                    <p className="text-sm text-[var(--on-surface-variant)]">© 2026 Munamii Cakery. The Digital Pâtissier.</p>
+                    <p className="text-xs text-[var(--on-surface-variant)]">All text and images are AI generated, designed and created in Google Stitch.</p>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-8 text-sm text-[var(--secondary)]">

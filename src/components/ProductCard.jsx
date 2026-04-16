@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product, isLarge = false, isStaggered = false }) => {
     const [imageLoaded, setImageLoaded] = useState(false);
-
+    const navigate = useNavigate();
     if (isLarge) {
         // Large wedding cake cards - featured style
         return (
@@ -22,7 +23,7 @@ const ProductCard = ({ product, isLarge = false, isStaggered = false }) => {
                     <p className="text-secondary text-lg">{product.description}</p>
                     <div className="flex items-center justify-between pt-4">
                         <span className="text-2xl font-bold text-primary">From ${product.price}</span>
-                        <button className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">
+                        <button onClick={() => navigate('/contact')} className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">
                             Consult Now
                         </button>
                     </div>
