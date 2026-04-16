@@ -2,7 +2,7 @@
   "name": "cakery-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://professorqtaku.github.io/cakery-website",
+  "homepage": "https://professorqtaku.github.io/cakery-website/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
